@@ -10,6 +10,8 @@ import {
   Building2,
 } from "lucide-react";
 import { services } from "@/data/services";
+import TextReveal from "@/components/animations/TextReveal";
+import StaggerReveal from "@/components/animations/StaggerReveal";
 
 const iconMap: Record<string, React.ElementType> = {
   Droplets,
@@ -31,9 +33,12 @@ export default function ServicesGrid() {
             <span className="text-xs font-label font-bold tracking-[0.2em] uppercase text-primary mb-4 block">
               WHAT WE DO
             </span>
-            <h2 className="text-3xl font-headline font-bold text-on-surface mb-6 tracking-tight">
+            <TextReveal
+              as="h2"
+              className="text-3xl font-headline font-bold text-on-surface mb-6 tracking-tight"
+            >
               Plumbing Services Across Brisbane
-            </h2>
+            </TextReveal>
             <p className="text-lg text-secondary font-body leading-relaxed">
               Everything from a dripping tap to a full house renovation.
               Licensed, insured, and ready to help.
@@ -44,7 +49,7 @@ export default function ServicesGrid() {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+        <StaggerReveal className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
           {services.map((service) => {
             const Icon = iconMap[service.icon];
             return (
@@ -55,7 +60,11 @@ export default function ServicesGrid() {
               >
                 <div className="w-12 h-12 bg-surface-container-low flex items-center justify-center mb-1">
                   {Icon && (
-                    <Icon size={24} strokeWidth={1.5} className="text-primary" />
+                    <Icon
+                      size={24}
+                      strokeWidth={1.5}
+                      className="text-primary"
+                    />
                   )}
                 </div>
                 <div>
@@ -69,7 +78,7 @@ export default function ServicesGrid() {
               </Link>
             );
           })}
-        </div>
+        </StaggerReveal>
       </div>
     </section>
   );

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Manrope, Inter } from "next/font/google";
 import "./globals.css";
+import SmoothScroll from "@/components/animations/SmoothScroll";
 
 const manrope = Manrope({
   subsets: ["latin"],
@@ -45,7 +46,7 @@ export default function RootLayout({
         >
           Skip to content
         </a>
-        {children}
+        <SmoothScroll>{children}</SmoothScroll>
       </body>
     </html>
   );

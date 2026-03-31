@@ -6,6 +6,7 @@ import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import { BUSINESS } from "@/data/constants";
 import { IMAGES } from "@/data/images";
+import TextReveal from "@/components/animations/TextReveal";
 
 export const metadata: Metadata = {
   title: "About Brisbane Plumbing Co. | QBCC Licensed Brisbane Plumber",
@@ -47,9 +48,12 @@ export default function AboutPage() {
             <span className="text-primary font-label text-[0.75rem] uppercase tracking-[0.15em] font-semibold mb-6 block">
               ABOUT US
             </span>
-            <h1 className="text-[3.5rem] md:text-[4.5rem] font-extrabold leading-[1.05] tracking-[-0.03em] text-on-surface mb-8 font-headline">
+            <TextReveal
+              as="h1"
+              className="text-[3.5rem] md:text-[4.5rem] font-extrabold leading-[1.05] tracking-[-0.03em] text-on-surface mb-8 font-headline"
+            >
               Built on Doing the Job Right.
-            </h1>
+            </TextReveal>
             <p className="text-lg text-secondary leading-relaxed max-w-xl font-body">
               We started this business with a simple idea — be the kind of
               plumber you&apos;d actually recommend to your mates. That means

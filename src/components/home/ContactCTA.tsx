@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { BUSINESS } from "@/data/constants";
+import TextReveal from "@/components/animations/TextReveal";
 
 export default function ContactCTA() {
   return (
@@ -10,9 +11,12 @@ export default function ContactCTA() {
             <span className="text-xs font-label font-bold tracking-[0.2em] uppercase text-primary mb-6 block">
               GET IN TOUCH
             </span>
-            <h2 className="text-3xl md:text-4xl font-headline font-bold mb-8">
-              Let&apos;s Talk About Your Plumbing.
-            </h2>
+            <TextReveal
+              as="h2"
+              className="text-3xl md:text-4xl font-headline font-bold mb-8"
+            >
+              {"Let's Talk About Your Plumbing."}
+            </TextReveal>
             <p className="text-surface/60 mb-12 text-lg font-body leading-relaxed">
               Whether it&apos;s an urgent repair or a planned renovation, give
               us a call or fill in the form and we&apos;ll get back to you

@@ -6,6 +6,7 @@ import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import { BUSINESS } from "@/data/constants";
 import { IMAGES } from "@/data/images";
+import TextReveal from "@/components/animations/TextReveal";
 
 export const metadata: Metadata = {
   title:
@@ -30,9 +31,12 @@ export default function FAQPage() {
             <span className="font-label text-xs tracking-[0.2em] uppercase text-primary font-bold mb-4 block">
               COMMON QUESTIONS
             </span>
-            <h1 className="font-headline text-[3.5rem] leading-[1.1] tracking-tight text-on-surface font-extrabold mb-8">
+            <TextReveal
+              as="h1"
+              className="font-headline text-[3.5rem] leading-[1.1] tracking-tight text-on-surface font-extrabold mb-8"
+            >
               Frequently Asked Questions
-            </h1>
+            </TextReveal>
             <p className="font-body text-lg text-secondary max-w-xl leading-relaxed">
               Everything you need to know about our services, pricing, and how
               we work. If your question isn&apos;t answered here, give us a

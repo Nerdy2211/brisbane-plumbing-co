@@ -24,6 +24,7 @@ export default function TrustBar() {
           {trustItems.map((item) => (
             <div
               key={item.label}
+              data-hero="trust-item"
               className="flex flex-col items-center text-center gap-2"
             >
               <item.icon size={28} strokeWidth={1} className="text-primary" />

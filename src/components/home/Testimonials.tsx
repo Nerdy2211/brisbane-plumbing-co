@@ -1,5 +1,7 @@
 import { Star } from "lucide-react";
 import { testimonials } from "@/data/testimonials";
+import TextReveal from "@/components/animations/TextReveal";
+import StaggerReveal from "@/components/animations/StaggerReveal";
 
 export default function Testimonials() {
   return (
@@ -9,12 +11,18 @@ export default function Testimonials() {
           <span className="text-xs font-label font-bold tracking-[0.2em] uppercase text-primary mb-4 block">
             WHAT OUR CLIENTS SAY
           </span>
-          <h2 className="text-3xl font-headline font-bold tracking-tight">
+          <TextReveal
+            as="h2"
+            className="text-3xl font-headline font-bold tracking-tight"
+          >
             Trusted by Brisbane Homeowners
-          </h2>
+          </TextReveal>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <StaggerReveal
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+          stagger={0.15}
+        >
           {testimonials.map((t) => (
             <div key={t.name} className="border-t border-outline-variant pt-8">
               <div className="flex gap-1 mb-4">
@@ -46,7 +54,7 @@ export default function Testimonials() {
               </div>
             </div>
           ))}
-        </div>
+        </StaggerReveal>
       </div>
     </section>
   );

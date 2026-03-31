@@ -6,6 +6,7 @@ import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import { IMAGES } from "@/data/images";
 import { regions } from "@/data/regions";
+import TextReveal from "@/components/animations/TextReveal";
 
 const iconMap: Record<string, LucideIcon> = { Building2, Waves, Factory };
 
@@ -37,9 +38,12 @@ export default function ServiceAreasPage() {
               <span className="text-xs font-label tracking-[0.2em] text-primary uppercase mb-6 block font-bold">
                 WHERE WE WORK
               </span>
-              <h1 className="font-headline text-[3.5rem] font-extrabold leading-[1.1] tracking-tight text-on-surface mb-8">
+              <TextReveal
+                as="h1"
+                className="font-headline text-[3.5rem] font-extrabold leading-[1.1] tracking-tight text-on-surface mb-8"
+              >
                 Servicing All of South East Queensland.
-              </h1>
+              </TextReveal>
               <p className="text-lg text-secondary leading-relaxed max-w-xl font-body">
                 From Brisbane&apos;s inner suburbs to Logan, Moreton Bay, and
                 the Redlands — we&apos;re local, we know the area, and

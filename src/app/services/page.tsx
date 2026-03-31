@@ -14,6 +14,8 @@ import {
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import { services } from "@/data/services";
+import TextReveal from "@/components/animations/TextReveal";
+import StaggerReveal from "@/components/animations/StaggerReveal";
 
 export const metadata: Metadata = {
   title:
@@ -50,9 +52,12 @@ export default function ServicesPage() {
               <span className="text-xs font-label tracking-[0.2em] text-primary uppercase mb-6 block font-bold">
                 OUR EXPERTISE
               </span>
-              <h1 className="font-headline text-[3.5rem] font-extrabold leading-[1.1] tracking-tight text-on-surface mb-8">
+              <TextReveal
+                as="h1"
+                className="font-headline text-[3.5rem] font-extrabold leading-[1.1] tracking-tight text-on-surface mb-8"
+              >
                 Plumbing Services Across Brisbane.
-              </h1>
+              </TextReveal>
               <p className="text-lg text-secondary leading-relaxed max-w-xl font-body">
                 Comprehensive plumbing solutions delivered with precision and
                 care. From a dripping tap to a full renovation — we cover it
@@ -69,7 +74,10 @@ export default function ServicesPage() {
               Service Directory
             </h2>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-0 border-l border-t border-surface-container-low">
+          <StaggerReveal
+            className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-0 border-l border-t border-surface-container-low"
+            selector=":scope > div"
+          >
             {services.map((service) => {
               const Icon = iconMap[service.icon];
               return (
@@ -96,7 +104,7 @@ export default function ServicesPage() {
                 </div>
               );
             })}
-          </div>
+          </StaggerReveal>
         </section>
 
         {/* Expanded Service Sections */}

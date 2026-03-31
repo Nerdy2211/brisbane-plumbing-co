@@ -7,14 +7,17 @@ import FeaturedServices from "@/components/home/FeaturedServices";
 import ServiceAreaPreview from "@/components/home/ServiceAreaPreview";
 import Testimonials from "@/components/home/Testimonials";
 import ContactCTA from "@/components/home/ContactCTA";
+import HeroEntrance from "@/components/animations/HeroEntrance";
 
 export default function Home() {
   return (
     <>
       <Header />
       <main id="main-content">
-        <Hero />
-        <TrustBar />
+        <HeroEntrance>
+          <Hero />
+          <TrustBar />
+        </HeroEntrance>
         <ServicesGrid />
         <FeaturedServices />
         <ServiceAreaPreview />

@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { MapPin } from "lucide-react";
 import { IMAGES } from "@/data/images";
+import TextReveal from "@/components/animations/TextReveal";
 
 export default function ServiceAreaPreview() {
   return (
@@ -11,9 +12,12 @@ export default function ServiceAreaPreview() {
           <span className="text-xs font-label font-bold tracking-[0.2em] uppercase text-primary mb-4 block">
             WHERE WE WORK
           </span>
-          <h2 className="text-3xl font-headline font-bold mb-4 tracking-tight">
+          <TextReveal
+            as="h2"
+            className="text-3xl font-headline font-bold mb-4 tracking-tight"
+          >
             Servicing All of South East Queensland
-          </h2>
+          </TextReveal>
           <p className="text-secondary font-body max-w-xl mx-auto">
             We service all of Brisbane — from the inner city to the outer
             suburbs. If you&apos;re in South East QLD, we can help.
