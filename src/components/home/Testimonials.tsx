@@ -11,7 +11,7 @@ const portraitImages: (string | null)[] = [
 
 export default function Testimonials() {
   return (
-    <section className="py-32 bg-surface">
+    <section className="py-12 md:py-32 bg-surface">
       <div className="max-w-7xl mx-auto px-8">
         <div className="mb-16">
           <span className="text-xs font-label font-bold tracking-[0.2em] uppercase text-primary mb-4 block">

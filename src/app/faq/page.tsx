@@ -25,7 +25,7 @@ export default function FAQPage() {
       <Header />
       <main className="pt-32 pb-24">
         {/* Hero */}
-        <section className="max-w-7xl mx-auto px-8 mb-24 grid grid-cols-1 md:grid-cols-12 gap-12 items-end">
+        <section className="max-w-7xl mx-auto px-6 lg:px-8 mb-12 md:mb-24 grid grid-cols-1 md:grid-cols-12 gap-12 items-end">
           <div className="md:col-span-7">
             <span className="font-label text-xs tracking-[0.2em] uppercase text-primary font-bold mb-4 block">
               COMMON QUESTIONS
@@ -52,7 +52,7 @@ export default function FAQPage() {
         </section>
 
         {/* Bento FAQ Grid */}
-        <section className="max-w-7xl mx-auto px-8 space-y-12">
+        <section className="max-w-7xl mx-auto px-6 lg:px-8 space-y-8 md:space-y-12">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {/* Licensing */}
             <div className="md:col-span-2 bg-surface-container-lowest p-10 border-l-4 border-primary">

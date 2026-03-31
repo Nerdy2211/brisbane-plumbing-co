@@ -42,7 +42,7 @@ export default function AboutPage() {
       <Header />
       <main className="pt-32">
         {/* Hero */}
-        <section className="max-w-7xl mx-auto px-8 mb-32 grid grid-cols-12 gap-8 items-end">
+        <section className="max-w-7xl mx-auto px-6 lg:px-8 mb-16 lg:mb-32 grid grid-cols-12 gap-8 items-end">
           <div className="col-span-12 lg:col-span-7">
             <span className="text-primary font-label text-[0.75rem] uppercase tracking-[0.15em] font-semibold mb-6 block">
               ABOUT US
@@ -58,7 +58,7 @@ export default function AboutPage() {
             </p>
           </div>
           <div className="col-span-12 lg:col-span-5 relative">
-            <div className="aspect-[4/5] overflow-hidden relative">
+            <div className="max-h-[250px] lg:max-h-none aspect-auto lg:aspect-[4/5] overflow-hidden relative">
               <Image
                 src={IMAGES.aboutHero}
                 alt="Precision plumbing fixtures"
@@ -67,22 +67,40 @@ export default function AboutPage() {
                 priority
               />
             </div>
-            <div className="absolute -bottom-8 -left-8 bg-surface-container-lowest p-8 max-w-xs hidden md:block border border-surface-container-low">
-              <p className="text-sm font-body italic text-secondary leading-relaxed">
-                &ldquo;We&apos;d rather do it right once than come back
-                twice.&rdquo;
-              </p>
-            </div>
+
           </div>
         </section>
 
         {/* Quality Over Shortcuts */}
-        <section className="bg-surface-container-low py-40">
+        {/* Mobile: image-as-background */}
+        <section className="md:hidden relative min-h-[420px] flex items-end">
+          <Image
+            src={IMAGES.aboutTools}
+            alt="Professional plumbing tools and materials"
+            fill
+            className="object-cover"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-[#1b1c19]/90 via-[#1b1c19]/70 to-[#1b1c19]/40" />
+          <div className="relative z-10 px-6 py-12">
+            <h2 className="text-3xl font-bold tracking-tight font-headline text-white mb-6">
+              Quality Over Shortcuts
+            </h2>
+            <p className="text-white/80 leading-relaxed text-base font-body">
+              We&apos;d rather take the time to fix something properly than
+              rush through and have you calling us back next month. Every
+              connection, every seal, and every fitting is done to last.
+              That&apos;s not a sales pitch — it&apos;s just how we work.
+            </p>
+          </div>
+        </section>
+
+        {/* Desktop: side-by-side */}
+        <section className="hidden md:block bg-surface-container-low py-40">
           <div className="max-w-7xl mx-auto px-8">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-24 items-center">
+            <div className="grid grid-cols-2 gap-24 items-center">
               <div className="space-y-12">
                 <div className="relative">
-                  <span className="absolute -top-8 right-0 text-[12rem] font-headline font-extrabold text-on-surface/[0.06] leading-none select-none z-0 pointer-events-none hidden md:block">
+                  <span className="absolute -top-8 right-0 text-[12rem] font-headline font-extrabold text-on-surface/[0.06] leading-none select-none z-0 pointer-events-none">
                     01
                   </span>
                   <h2 className="text-3xl font-bold tracking-tight font-headline relative z-10">
@@ -109,9 +127,9 @@ export default function AboutPage() {
         </section>
 
         {/* Licensed & Insured */}
-        <section className="py-40">
-          <div className="max-w-7xl mx-auto px-8">
-            <div className="text-center mb-24 max-w-3xl mx-auto">
+        <section className="py-12 md:py-40">
+          <div className="max-w-7xl mx-auto px-6 lg:px-8">
+            <div className="text-center mb-12 md:mb-24 max-w-3xl mx-auto">
               <h2 className="text-[2.5rem] font-bold tracking-tight mb-6 font-headline">
                 Licensed &amp; Insured
               </h2>
@@ -170,7 +188,7 @@ export default function AboutPage() {
         </section>
 
         {/* CTA */}
-        <section className="py-48 bg-surface">
+        <section className="py-16 md:py-48 bg-surface">
           <div className="max-w-4xl mx-auto px-8 text-center">
             <h2 className="text-[3rem] md:text-[4rem] font-bold tracking-tight mb-10 leading-[1.1] font-headline">
               Ready to Get Started?

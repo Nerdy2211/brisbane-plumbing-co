@@ -81,8 +81,8 @@ export default function ServiceAreasPage() {
         </section>
 
         {/* Region Cards */}
-        <section className="max-w-7xl mx-auto px-8 mb-24">
-          <div className="relative bg-surface-container-low p-12 lg:p-24 overflow-hidden min-h-[500px] flex items-center justify-center">
+        <section className="max-w-7xl mx-auto px-6 lg:px-8 mb-12 md:mb-24">
+          <div className="relative bg-surface-container-low p-6 md:p-12 lg:p-24 overflow-hidden min-h-[500px] flex items-center justify-center">
             <div className="absolute inset-0 opacity-10 pointer-events-none grayscale contrast-125">
               <Image
                 src={IMAGES.serviceAreasMapBg}
@@ -160,7 +160,7 @@ export default function ServiceAreasPage() {
         </section>
 
         {/* Why Local Matters */}
-        <section className="max-w-7xl mx-auto px-8 grid grid-cols-1 lg:grid-cols-12 gap-24 items-center">
+        <section className="max-w-7xl mx-auto px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-24 items-center">
           <div className="lg:col-span-5 order-2 lg:order-1">
             <div className="relative group">
               <Image
@@ -168,7 +168,7 @@ export default function ServiceAreasPage() {
                 alt="Industrial pipes and fittings"
                 width={600}
                 height={750}
-                className="w-full aspect-[4/5] object-cover grayscale brightness-90 contrast-110"
+                className="w-full max-h-[300px] lg:max-h-none aspect-auto lg:aspect-[4/5] object-cover grayscale brightness-90 contrast-110"
               />
               <div className="absolute -bottom-8 -right-8 bg-surface-container p-12 hidden md:block">
                 <span className="text-primary text-5xl font-headline font-extrabold">

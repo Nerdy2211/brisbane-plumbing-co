@@ -3,9 +3,9 @@ import { BUSINESS } from "@/data/constants";
 
 export default function ContactCTA() {
   return (
-    <section className="py-32 bg-on-surface text-surface" id="contact">
-      <div className="max-w-7xl mx-auto px-8">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-24">
+    <section className="py-12 md:py-32 bg-on-surface text-surface" id="contact">
+      <div className="max-w-7xl mx-auto px-6 lg:px-8">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24">
           <div>
             <span className="text-xs font-label font-bold tracking-[0.2em] uppercase text-primary mb-6 block">
               GET IN TOUCH

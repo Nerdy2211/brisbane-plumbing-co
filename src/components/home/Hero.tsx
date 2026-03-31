@@ -5,16 +5,29 @@ import { IMAGES } from "@/data/images";
 
 export default function Hero() {
   return (
-    <header className="relative min-h-screen flex items-center pt-20 overflow-hidden">
-      <div className="max-w-7xl mx-auto px-8 w-full grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-        <div className="lg:col-span-7 z-10">
+    <header className="relative min-h-[85vh] lg:min-h-screen flex items-center pt-20 overflow-hidden">
+      {/* Mobile background image */}
+      <div className="lg:hidden absolute inset-0">
+        <Image
+          src={IMAGES.hero}
+          alt=""
+          fill
+          className="object-cover"
+          priority
+          aria-hidden="true"
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-[#1b1c19]/95 via-[#1b1c19]/75 to-[#1b1c19]/50" />
+      </div>
+
+      <div className="max-w-7xl mx-auto px-6 lg:px-8 w-full grid grid-cols-1 lg:grid-cols-12 gap-12 items-center relative z-10">
+        <div className="lg:col-span-7">
           <span className="text-xs tracking-[0.2em] text-primary font-bold mb-6 block uppercase font-label">
             BRISBANE&apos;S LOCAL PLUMBER
           </span>
-          <h1 className="text-[clamp(2.5rem,6vw,3.5rem)] font-headline font-extrabold leading-[1.1] text-on-surface mb-8 tracking-tight">
+          <h1 className="text-[clamp(2.2rem,6vw,3.5rem)] font-headline font-extrabold leading-[1.1] text-white lg:text-on-surface mb-8 tracking-tight">
             Quality Plumbing You Can Count On.
           </h1>
-          <p className="text-lg md:text-xl text-secondary max-w-xl mb-10 leading-relaxed font-body">
+          <p className="text-base lg:text-xl text-white/80 lg:text-secondary max-w-xl mb-10 leading-relaxed font-body">
             From blocked drains to full renovations — licensed, insured, and
             built on doing the job right the first time.
           </p>
@@ -27,13 +40,15 @@ export default function Hero() {
             </Link>
             <Link
               href="/services"
-              className="text-primary font-headline font-bold text-center px-8 py-4 border-b-2 border-transparent hover:border-primary transition-all"
+              className="text-white/90 lg:text-primary font-headline font-bold text-center px-8 py-4 border-b-2 border-transparent hover:border-primary transition-all"
             >
               Our Services
             </Link>
           </div>
         </div>
-        <div className="lg:col-span-5 relative h-[500px] lg:h-[700px]">
+
+        {/* Desktop-only side image */}
+        <div className="hidden lg:block lg:col-span-5 relative h-[700px]">
           <Image
             src={IMAGES.hero}
             alt="Polished copper pipes and brass fittings"
@@ -43,6 +58,7 @@ export default function Hero() {
           />
         </div>
       </div>
+
       <div className="absolute bottom-12 left-8 hidden lg:block">
         <div className="flex items-center gap-4 text-secondary/40">
           <span className="text-sm font-headline font-bold tracking-tighter">

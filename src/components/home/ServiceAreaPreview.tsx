@@ -5,7 +5,7 @@ import { IMAGES } from "@/data/images";
 
 export default function ServiceAreaPreview() {
   return (
-    <section className="bg-surface-container py-32" id="areas">
+    <section className="bg-surface-container py-12 md:py-32" id="areas">
       <div className="max-w-7xl mx-auto px-8">
         <div className="text-center mb-20">
           <span className="text-xs font-label font-bold tracking-[0.2em] uppercase text-primary mb-4 block">

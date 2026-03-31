@@ -24,9 +24,9 @@ const iconMap: Record<string, React.ElementType> = {
 
 export default function ServicesGrid() {
   return (
-    <section className="py-32 bg-surface" id="services">
+    <section className="py-12 md:py-32 bg-surface" id="services">
       <div className="max-w-7xl mx-auto px-8">
-        <div className="flex flex-col md:flex-row justify-between items-end mb-20 gap-8">
+        <div className="flex flex-col md:flex-row justify-between items-end mb-10 md:mb-20 gap-8">
           <div className="max-w-2xl">
             <span className="text-xs font-label font-bold tracking-[0.2em] uppercase text-primary mb-4 block">
               WHAT WE DO

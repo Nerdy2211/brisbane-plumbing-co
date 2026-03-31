@@ -63,7 +63,7 @@ export default function ServicesPage() {
         </section>
 
         {/* Service Directory Grid */}
-        <section className="px-8 mb-32 max-w-7xl mx-auto">
+        <section className="px-6 lg:px-8 mb-16 md:mb-32 max-w-7xl mx-auto">
           <div className="mb-12 pb-4">
             <h2 className="text-xs font-bold uppercase tracking-[0.2em] text-secondary">
               Service Directory
@@ -100,7 +100,7 @@ export default function ServicesPage() {
         </section>
 
         {/* Expanded Service Sections */}
-        <section className="max-w-7xl mx-auto px-8 space-y-32">
+        <section className="max-w-7xl mx-auto px-6 lg:px-8 space-y-16 md:space-y-32">
           {services.map((service, i) => {
             const Icon = iconMap[service.icon];
             return (
