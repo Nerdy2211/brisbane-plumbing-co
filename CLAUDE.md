@@ -350,11 +350,69 @@ Full services page with all 8 services expanded. Each service gets:
 - [x] Service Areas page
 - [x] About page
 - [x] FAQ page
+- [x] Mobile responsive pass (image-as-background on mobile, tightened spacing)
+- [x] SEO meta tags + Open Graph (all 5 pages)
+- [x] Google Maps embed (Service Areas page)
+- [x] Code quality audit and cleanup
+- [x] Deploy to Vercel (via GitHub auto-deploy)
 - [ ] GSAP animations
 - [ ] Lenis smooth scroll
-- [ ] Custom thin-stroke service icons
-- [ ] Mobile responsive pass
-- [ ] SEO meta tags + Open Graph
-- [ ] Google Maps embed
+- [ ] Custom thin-stroke service icons (optional enhancement)
 - [ ] Lighthouse audit
-- [ ] Deploy to Vercel
+
+---
+
+## Completed Code Audit
+
+Audit performed covering component structure, TypeScript, Tailwind, performance, SEO, accessibility, and cleanup.
+
+### What was cleaned up:
+- **Raw hex values removed** — All Tailwind classes now use config tokens (`bg-surface-variant`, `text-primary/20`, `from-on-surface/90`) instead of raw hex (`bg-[#e4e2dd]`, `text-[#79542e]`)
+- **Unused image constants removed** — `testimonialPortrait1`, `testimonialPortrait2`, `serviceAreasMapBg` removed from `src/data/images.ts` (no longer referenced after switching testimonials to initial-circle style and map to Google Maps iframe)
+- **Data extraction** — `regions` array moved from `service-areas/page.tsx` to `src/data/regions.ts` with typed `Region` interface
+- **Skip-to-content link** — Added to `layout.tsx` for keyboard accessibility (sr-only, visible on focus)
+- **`id="main-content"`** — Added to all page `<main>` elements as skip-link target
+
+### Audit results (no issues found):
+- **TypeScript** — No `any` types, all props have interfaces
+- **No raw `<img>` tags** — All images use `next/image`
+- **No console.log** — Clean codebase
+- **No unused imports** — All verified
+- **Heading hierarchy** — One H1 per page, proper H2/H3 nesting
+- **Accessibility** — Hamburger menu has `aria-label`, all form inputs have labels
+- **Client components** — Only `Header.tsx` uses "use client" (for useState/usePathname)
+- **Fonts** — Loaded via `next/font/google`, no `<link>` tags
+- **Lucide icons** — All imported individually
+- **.gitignore** — Covers `node_modules`, `.next`, `.env`
+
+---
+
+## Next Steps
+- **GSAP animations** — Text reveals (word-by-word fade-in + slide-up), card staggers (scale 0.95→1 + fade), magnetic hover buttons, clip-path image reveals, parallax decorative numbers. All via ScrollTrigger, play once, respect prefers-reduced-motion.
+- **Lenis smooth scrolling** — Wrap in dynamic import with `ssr: false`
+- **Tidio chatbot integration** — Embed script for live chat
+- **Make.com form automation** — Connect contact form to Make.com webhook for email/CRM notifications
+- **Custom thin-stroke service icons** — Optional enhancement to replace Lucide defaults with blueprint-style SVGs
+- **Hero animation** — TBD, exploring options (text typing effect, parallax layers, or subtle background motion)
+- **Lighthouse audit** — Target 90+ across all categories
+- **Self-host images** — Replace Google-hosted Stitch image URLs with local files in `/public/images/` for reliability (see note below)
+
+---
+
+## Patterns & Conventions
+
+### Data files (`/src/data/`)
+- `constants.ts` — Single source of truth for all business info (name, phone, email, ABN, QBCC licence). Update this one file when swapping placeholders.
+- `services.ts` — All 8 service definitions with `Service` interface (slug, title, description, fullDescription, commonProblems, icon name)
+- `testimonials.ts` — Testimonial data with `Testimonial` interface
+- `regions.ts` — Service area regions with `Region` interface
+- `images.ts` — Centralised Stitch image URLs (see image note below)
+
+### Component conventions
+- Server Components by default; `"use client"` only for interactivity
+- Max 150 lines per component (page files may exceed for now)
+- `cn()` utility from `src/lib/utils.ts` (clsx + tailwind-merge) for conditional classes
+- Icon mapping pattern: data files store icon names as strings, components map to Lucide components via `Record<string, React.ElementType>`
+
+### Image note
+All images currently use URLs hosted on `lh3.googleusercontent.com` (Google Stitch AI-generated images). These are functional but Google-hosted — they could be removed or become unavailable. **Before production launch, download all images and self-host in `/public/images/`**, then update `src/data/images.ts` to use local paths (e.g., `/images/hero.webp`). Convert to WebP format for optimal performance.

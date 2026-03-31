@@ -23,7 +23,7 @@ export default function FAQPage() {
   return (
     <>
       <Header />
-      <main className="pt-32 pb-24">
+      <main id="main-content" className="pt-32 pb-24">
         {/* Hero */}
         <section className="max-w-7xl mx-auto px-6 lg:px-8 mb-12 md:mb-24 grid grid-cols-1 md:grid-cols-12 gap-12 items-end">
           <div className="md:col-span-7">

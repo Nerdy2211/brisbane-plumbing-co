@@ -40,7 +40,7 @@ export default function AboutPage() {
   return (
     <>
       <Header />
-      <main className="pt-32">
+      <main id="main-content" className="pt-32">
         {/* Hero */}
         <section className="max-w-7xl mx-auto px-6 lg:px-8 mb-16 lg:mb-32 grid grid-cols-12 gap-8 items-end">
           <div className="col-span-12 lg:col-span-7">
@@ -80,7 +80,7 @@ export default function AboutPage() {
             fill
             className="object-cover brightness-[0.4]"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-[#1b1c19]/90 via-[#1b1c19]/70 to-[#1b1c19]/45" />
+          <div className="absolute inset-0 bg-gradient-to-t from-on-surface/90 via-on-surface/70 to-on-surface/45" />
           <div className="relative z-10 px-6 py-12">
             <h2 className="text-3xl font-bold tracking-tight font-headline text-white mb-6">
               Quality Over Shortcuts

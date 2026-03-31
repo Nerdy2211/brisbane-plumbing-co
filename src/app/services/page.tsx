@@ -42,7 +42,7 @@ export default function ServicesPage() {
   return (
     <>
       <Header />
-      <main className="pt-32 pb-24">
+      <main id="main-content" className="pt-32 pb-24">
         {/* Hero */}
         <section className="max-w-7xl mx-auto px-8 mb-24 lg:mb-32">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-end">

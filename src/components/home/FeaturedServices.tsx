@@ -34,7 +34,7 @@ export default function FeaturedServices() {
                 fill
                 className="object-cover brightness-[0.4]"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-[#1b1c19]/90 via-[#1b1c19]/70 to-[#1b1c19]/45" />
+              <div className="absolute inset-0 bg-gradient-to-t from-on-surface/90 via-on-surface/70 to-on-surface/45" />
               <span className="absolute top-4 right-4 text-[8rem] font-headline font-extrabold text-white/10 select-none leading-none pointer-events-none">
                 {num}
               </span>

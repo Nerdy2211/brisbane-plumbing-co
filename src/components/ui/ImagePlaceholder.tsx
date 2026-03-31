@@ -16,14 +16,14 @@ export default function ImagePlaceholder({
   return (
     <div
       className={cn(
-        "w-full h-full bg-[#e4e2dd] flex items-center justify-center relative overflow-hidden",
+        "w-full h-full bg-surface-variant flex items-center justify-center relative overflow-hidden",
         className
       )}
       role="img"
       aria-label={alt}
     >
-      <div className="absolute inset-0 bg-gradient-to-br from-[#d8c3b4]/20 to-transparent" />
-      <Icon className="w-12 h-12 text-[#79542e]/20" strokeWidth={1} />
+      <div className="absolute inset-0 bg-gradient-to-br from-outline-variant/20 to-transparent" />
+      <Icon className="w-12 h-12 text-primary/20" strokeWidth={1} />
     </div>
   );
 }

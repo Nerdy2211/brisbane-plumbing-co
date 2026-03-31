@@ -1,10 +1,13 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import { MapPin, Building2, Waves, Factory } from "lucide-react";
+import { MapPin, Building2, Waves, Factory, type LucideIcon } from "lucide-react";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import { IMAGES } from "@/data/images";
+import { regions } from "@/data/regions";
+
+const iconMap: Record<string, LucideIcon> = { Building2, Waves, Factory };
 
 export const metadata: Metadata = {
   title:
@@ -18,45 +21,11 @@ export const metadata: Metadata = {
   },
 };
 
-const regions = [
-  {
-    name: "Brisbane",
-    icon: Building2,
-    areas: [
-      "Inner City & CBD",
-      "Paddington & West End",
-      "New Farm & Teneriffe",
-      "Southside suburbs",
-    ],
-    primary: true,
-  },
-  {
-    name: "Moreton Bay",
-    icon: Waves,
-    areas: [
-      "Redcliffe Peninsula",
-      "North Lakes & Mango Hill",
-      "Pine Rivers & Strathpine",
-    ],
-    primary: false,
-  },
-  {
-    name: "Logan & Redlands",
-    icon: Factory,
-    areas: [
-      "Logan Central & Springwood",
-      "Underwood & Sunnybank",
-      "Capalaba & Cleveland",
-    ],
-    primary: false,
-  },
-];
-
 export default function ServiceAreasPage() {
   return (
     <>
       <Header />
-      <main className="pt-32 pb-24">
+      <main id="main-content" className="pt-32 pb-24">
         {/* Hero */}
         <section className="max-w-7xl mx-auto px-8 mb-24 lg:mb-32">
           <div className="relative">
@@ -96,7 +65,9 @@ export default function ServiceAreasPage() {
               />
             </div>
             <div className="relative z-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 w-full">
-              {regions.map((region) => (
+              {regions.map((region) => {
+                const Icon = iconMap[region.icon];
+                return (
                 <div
                   key={region.name}
                   className={`bg-surface-container-lowest p-8 border-l-2 ${
@@ -109,13 +80,15 @@ export default function ServiceAreasPage() {
                     <h3 className="font-headline text-xl font-bold">
                       {region.name}
                     </h3>
-                    <region.icon
-                      size={24}
-                      strokeWidth={1}
-                      className={
-                        region.primary ? "text-primary" : "text-secondary"
-                      }
-                    />
+                    {Icon && (
+                      <Icon
+                        size={24}
+                        strokeWidth={1}
+                        className={
+                          region.primary ? "text-primary" : "text-secondary"
+                        }
+                      />
+                    )}
                   </div>
                   <ul className="space-y-3 text-sm text-secondary font-body">
                     {region.areas.map((area) => (
@@ -132,7 +105,8 @@ export default function ServiceAreasPage() {
                     ))}
                   </ul>
                 </div>
-              ))}
+                );
+              })}
 
               {/* Commitment Banner */}
               <div className="bg-primary p-8 flex flex-col justify-between text-on-primary md:col-span-2 lg:col-span-3">
