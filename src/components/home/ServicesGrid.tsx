@@ -56,7 +56,7 @@ export default function ServicesGrid() {
               <Link
                 key={service.slug}
                 href={`/services#${service.slug}`}
-                className="group bg-surface-container-low p-8 h-[280px] flex flex-col gap-4 hover:bg-surface-container-highest transition-colors"
+                className="group bg-surface-container-low p-8 h-[280px] flex flex-col gap-4 hover:bg-surface-container-highest hover:-translate-y-1.5 hover:shadow-[0_20px_40px_rgba(27,28,25,0.08)] hover:border-primary border border-transparent transition-all duration-300 ease-out"
               >
                 <div className="w-12 h-12 bg-surface-container-low flex items-center justify-center mb-1">
                   {Icon && (
