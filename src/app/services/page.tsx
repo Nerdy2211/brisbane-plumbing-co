@@ -182,7 +182,7 @@ export default function ServicesPage() {
           <div className="flex flex-col sm:flex-row gap-6 justify-center">
             <Link
               href="tel:0400000000"
-              className="bronze-gradient text-white px-10 py-4 rounded-sm font-headline font-bold tracking-tight transition-all duration-300 hover:brightness-110 hover:scale-[1.03]"
+              className="bronze-gradient text-white px-10 py-4 rounded-sm font-headline font-bold tracking-tight brightness-100 transition-all duration-300 hover:brightness-110 hover:scale-[1.03]"
             >
               Call 0400 000 000
             </Link>

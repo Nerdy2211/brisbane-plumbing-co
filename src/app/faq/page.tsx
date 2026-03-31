@@ -255,7 +255,7 @@ export default function FAQPage() {
             <div className="flex flex-col sm:flex-row gap-6 justify-center">
               <Link
                 href={BUSINESS.phoneTel}
-                className="bronze-gradient text-white px-8 py-3 rounded-sm font-headline font-bold tracking-tight transition-all duration-300 hover:brightness-110 hover:scale-[1.03]"
+                className="bronze-gradient text-white px-8 py-3 rounded-sm font-headline font-bold tracking-tight brightness-100 transition-all duration-300 hover:brightness-110 hover:scale-[1.03]"
               >
                 Call {BUSINESS.phone}
               </Link>

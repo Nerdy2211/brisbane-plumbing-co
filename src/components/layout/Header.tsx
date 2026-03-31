@@ -47,7 +47,7 @@ export default function Header() {
           </Link>
           <Link
             href="/#contact"
-            className="hidden md:block bronze-gradient text-on-primary px-6 py-2.5 rounded-sm font-headline font-bold tracking-tight text-sm transition-all duration-300 hover:brightness-110 hover:scale-[1.03]"
+            className="hidden md:block bronze-gradient text-on-primary px-6 py-2.5 rounded-sm font-headline font-bold tracking-tight text-sm brightness-100 transition-all duration-300 hover:brightness-110 hover:scale-[1.03]"
           >
             Get a Quote
           </Link>
@@ -92,7 +92,7 @@ export default function Header() {
           <Link
             href="/#contact"
             onClick={() => setMobileOpen(false)}
-            className="block bronze-gradient text-on-primary px-6 py-3 rounded-sm font-headline font-bold tracking-tight text-sm text-center mt-4 transition-all duration-300 hover:brightness-110"
+            className="block bronze-gradient text-on-primary px-6 py-3 rounded-sm font-headline font-bold tracking-tight text-sm text-center mt-4 brightness-100 transition-all duration-300 hover:brightness-110"
           >
             Get a Quote
           </Link>

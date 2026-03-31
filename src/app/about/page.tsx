@@ -199,7 +199,7 @@ export default function AboutPage() {
             <div className="flex flex-col sm:flex-row gap-8 justify-center items-center">
               <Link
                 href="/#contact"
-                className="bronze-gradient text-on-primary px-10 py-5 rounded-sm font-bold tracking-tight transition-all duration-300 hover:brightness-110 hover:scale-[1.03] text-lg font-headline"
+                className="bronze-gradient text-on-primary px-10 py-5 rounded-sm font-bold tracking-tight brightness-100 transition-all duration-300 hover:brightness-110 hover:scale-[1.03] text-lg font-headline"
               >
                 Get a Quote
               </Link>

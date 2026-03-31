@@ -52,7 +52,7 @@ export default function Hero() {
             <Link
               href="#contact"
               data-hero="button"
-              className="bronze-gradient text-white px-8 py-4 rounded-sm font-headline font-bold text-center tracking-wide transition-all duration-300 hover:brightness-110 hover:scale-[1.03]"
+              className="bronze-gradient text-white px-8 py-4 rounded-sm font-headline font-bold text-center tracking-wide brightness-100 transition-all duration-300 hover:brightness-110 hover:scale-[1.03]"
             >
               Get a Quote
             </Link>
