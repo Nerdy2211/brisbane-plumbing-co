@@ -255,13 +255,13 @@ export default function FAQPage() {
             <div className="flex flex-col sm:flex-row gap-6 justify-center">
               <Link
                 href={BUSINESS.phoneTel}
-                className="bronze-gradient text-white px-8 py-3 rounded-sm font-headline font-bold tracking-tight hover:opacity-90 transition-all"
+                className="bronze-gradient text-white px-8 py-3 rounded-sm font-headline font-bold tracking-tight transition-all duration-300 hover:brightness-110 hover:scale-[1.03]"
               >
                 Call {BUSINESS.phone}
               </Link>
               <Link
                 href="/#contact"
-                className="text-primary font-headline font-bold tracking-tight border-b-2 border-transparent hover:border-primary transition-all px-8 py-3"
+                className="text-primary font-headline font-bold tracking-tight border-b-2 border-transparent hover:border-primary hover:bg-on-surface/5 transition-all duration-300 px-8 py-3"
               >
                 Send a Message
               </Link>

@@ -126,7 +126,7 @@ export default function ContactCTA() {
               </div>
               <button
                 type="submit"
-                className="w-full bronze-gradient text-white font-headline font-bold py-5 uppercase tracking-widest text-sm transition-opacity hover:opacity-90"
+                className="w-full bronze-gradient text-white font-headline font-bold py-5 uppercase tracking-widest text-sm transition-all duration-300 hover:brightness-110 hover:scale-[1.03]"
               >
                 Send Request
               </button>

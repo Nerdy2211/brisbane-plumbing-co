@@ -26,7 +26,7 @@ export default function Footer() {
             <li>
               <Link
                 href="/services"
-                className="text-secondary hover:text-primary transition-colors font-body text-sm"
+                className="text-secondary hover:text-primary transition-colors duration-300 font-body text-sm"
               >
                 Services
               </Link>
@@ -34,7 +34,7 @@ export default function Footer() {
             <li>
               <Link
                 href="/service-areas"
-                className="text-secondary hover:text-primary transition-colors font-body text-sm"
+                className="text-secondary hover:text-primary transition-colors duration-300 font-body text-sm"
               >
                 Service Areas
               </Link>
@@ -42,7 +42,7 @@ export default function Footer() {
             <li>
               <Link
                 href="/about"
-                className="text-secondary hover:text-primary transition-colors font-body text-sm"
+                className="text-secondary hover:text-primary transition-colors duration-300 font-body text-sm"
               >
                 About
               </Link>
@@ -50,7 +50,7 @@ export default function Footer() {
             <li>
               <Link
                 href="/faq"
-                className="text-secondary hover:text-primary transition-colors font-body text-sm"
+                className="text-secondary hover:text-primary transition-colors duration-300 font-body text-sm"
               >
                 FAQ
               </Link>
@@ -66,7 +66,7 @@ export default function Footer() {
             <li>
               <Link
                 href={BUSINESS.phoneTel}
-                className="text-secondary hover:text-primary transition-colors font-body text-sm"
+                className="text-secondary hover:text-primary transition-colors duration-300 font-body text-sm"
               >
                 {BUSINESS.phone}
               </Link>
@@ -74,7 +74,7 @@ export default function Footer() {
             <li>
               <Link
                 href={`mailto:${BUSINESS.email}`}
-                className="text-secondary hover:text-primary transition-colors font-body text-sm"
+                className="text-secondary hover:text-primary transition-colors duration-300 font-body text-sm"
               >
                 {BUSINESS.email}
               </Link>

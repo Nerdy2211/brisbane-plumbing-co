@@ -199,13 +199,13 @@ export default function AboutPage() {
             <div className="flex flex-col sm:flex-row gap-8 justify-center items-center">
               <Link
                 href="/#contact"
-                className="bronze-gradient text-on-primary px-10 py-5 rounded-sm font-bold tracking-tight hover:opacity-90 transition-all text-lg font-headline"
+                className="bronze-gradient text-on-primary px-10 py-5 rounded-sm font-bold tracking-tight transition-all duration-300 hover:brightness-110 hover:scale-[1.03] text-lg font-headline"
               >
                 Get a Quote
               </Link>
               <Link
                 href={BUSINESS.phoneTel}
-                className="text-primary px-10 py-5 font-bold tracking-tight border-b-2 border-transparent hover:border-primary transition-all text-lg font-headline"
+                className="text-primary px-10 py-5 font-bold tracking-tight border-b-2 border-transparent hover:border-primary hover:bg-on-surface/5 transition-all duration-300 text-lg font-headline"
               >
                 Call {BUSINESS.phone}
               </Link>

@@ -52,14 +52,14 @@ export default function Hero() {
             <Link
               href="#contact"
               data-hero="button"
-              className="bronze-gradient text-white px-8 py-4 rounded-sm font-headline font-bold text-center tracking-wide transition-transform hover:scale-[1.02]"
+              className="bronze-gradient text-white px-8 py-4 rounded-sm font-headline font-bold text-center tracking-wide transition-all duration-300 hover:brightness-110 hover:scale-[1.03]"
             >
               Get a Quote
             </Link>
             <Link
               href="/services"
               data-hero="button"
-              className="text-white/90 lg:text-primary font-headline font-bold text-center px-8 py-4 border-b-2 border-transparent hover:border-primary transition-all"
+              className="text-white/90 lg:text-primary font-headline font-bold text-center px-8 py-4 border-b-2 border-transparent hover:border-primary hover:bg-on-surface/5 transition-all duration-300"
             >
               Our Services
             </Link>
