@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "surface-container-low": "#f5f3ee",
+                        "secondary": "#5f5e5e",
+                        "outline-variant": "#d8c3b4",
+                        "outline": "#857467",
+                        "on-tertiary-fixed-variant": "#504536",
+                        "surface": "#fbf9f4",
+                        "on-secondary-container": "#656464",
+                        "error": "#ba1a1a",
+                        "surface-container": "#f0eee9",
+                        "on-primary-fixed-variant": "#61401b",
+                        "on-surface-variant": "#524439",
+                        "tertiary-container": "#807262",
+                        "on-primary": "#ffffff",
+                        "primary-fixed-dim": "#eebd8e",
+                        "inverse-primary": "#eebd8e",
+                        "on-secondary": "#ffffff",
+                        "on-tertiary-container": "#fffbff",
+                        "on-background": "#1b1c19",
+                        "surface-dim": "#dbdad5",
+                        "surface-variant": "#e4e2dd",
+                        "surface-container-lowest": "#ffffff",
+                        "error-container": "#ffdad6",
+                        "surface-container-highest": "#e4e2dd",
+                        "on-secondary-fixed": "#1b1c1c",
+                        "surface-tint": "#7c5730",
+                        "inverse-on-surface": "#f2f1ec",
+                        "on-tertiary": "#ffffff",
+                        "on-primary-fixed": "#2c1600",
+                        "inverse-surface": "#30312e",
+                        "primary": "#79542e",
+                        "on-secondary-fixed-variant": "#474747",
+                        "tertiary-fixed-dim": "#d5c4b1",
+                        "secondary-container": "#e4e2e1",
+                        "secondary-fixed-dim": "#c8c6c6",
+                        "primary-container": "#956c44",
+                        "on-primary-container": "#fffbff",
+                        "tertiary": "#665a4a",
+                        "on-error": "#ffffff",
+                        "background": "#fbf9f4",
+                        "surface-container-high": "#eae8e3",
+                        "on-tertiary-fixed": "#231a0e",
+                        "on-error-container": "#93000a",
+                        "tertiary-fixed": "#f1e0cc",
+                        "on-surface": "#1b1c19",
+                        "secondary-fixed": "#e4e2e1",
+                        "surface-bright": "#fbf9f4",
+                        "primary-fixed": "#ffdcbd"
+                    },
+                    fontFamily: {
+                        "headline": ["Manrope"],
+                        "body": ["Inter"],
+                        "label": ["Inter"]
+                    },
+                    borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+        .tonal-shift-bg {
+            background-color: #f5f3ee;
+        }
+        .scrollbar-hide::-webkit-scrollbar {
+            display: none;
+        }
+        .scrollbar-hide {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body selection:bg-primary-fixed-dim selection:text-on-primary-fixed antialiased">
+<!-- Top Navigation Shell -->
+<nav class="fixed top-0 w-full z-50 bg-stone-50/80 backdrop-blur-md dark:bg-stone-900/80">
+<div class="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto">
+<div class="text-xl font-bold tracking-tighter text-stone-900 dark:text-stone-50 font-headline">
+                Brisbane Plumbing Co.
+            </div>
+<div class="hidden md:flex gap-8 items-center">
+<a class="text-stone-600 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-200 transition-colors font-inter text-sm" href="#">Services</a>
+<a class="text-stone-600 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-200 transition-colors font-inter text-sm" href="#">Process</a>
+<a class="text-amber-800 dark:text-amber-500 border-b-2 border-amber-800 pb-1 font-inter text-sm" href="#">Service Areas</a>
+<a class="text-stone-600 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-200 transition-colors font-inter text-sm" href="#">About</a>
+<a class="text-stone-600 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-200 transition-colors font-inter text-sm" href="#">FAQ</a>
+</div>
+<button class="bg-primary text-on-primary px-6 py-2.5 text-sm font-semibold tracking-tight hover:opacity-90 active:scale-95 transition-all duration-300">
+                Book Consultation
+            </button>
+</div>
+</nav>
+<main class="pt-32 pb-24">
+<!-- Hero Section -->
+<section class="max-w-7xl mx-auto px-8 mb-24 lg:mb-32">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-end">
+<div class="lg:col-span-7">
+<span class="text-xs font-label tracking-[0.2em] text-primary uppercase mb-6 block">Strategic Network</span>
+<h1 class="font-headline text-[3.5rem] font-extrabold leading-[1.1] tracking-tight text-on-surface mb-8">
+                        Precision Engineering <br/>Across South East QLD.
+                    </h1>
+<p class="text-lg text-secondary leading-relaxed max-w-xl font-body">
+                        Our service perimeter extends through the architectural heart of Brisbane to the developing industrial corridors of Logan and Moreton Bay. We provide technical plumbing solutions tailored to the specific topography and infrastructure of each region.
+                    </p>
+</div>
+<div class="lg:col-span-5 flex justify-end">
+<div class="text-[5rem] font-headline font-bold text-outline-variant/20 leading-none select-none">
+                        01
+                    </div>
+</div>
+</div>
+</section>
+<!-- Interactive Region Map Visualization -->
+<section class="max-w-7xl mx-auto px-8 mb-24">
+<div class="relative bg-surface-container-low p-12 lg:p-24 overflow-hidden min-h-[600px] flex items-center justify-center">
+<!-- Abstract Map Background -->
+<div class="absolute inset-0 opacity-10 pointer-events-none grayscale contrast-125" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAGZvidqhTWJwVfoRiHqW1obnp35JYG4xLuN5GcARRlj6pDsgl8LB8N3wC1sC0duyFyGdbLGkW30DNe0xJWYCW8H75I6sc-C4O7SRbzBOk_EUqSLkKdzhtCeotXslx4p95DcO27k2fmaeYXuyxrweF7h70tLOUE9mHN1poE5Kdwcq2_Vv0ZMXFlVICejfoUbHyleAJR9xknHZ2r37Bw1rufvg7RC7aQRCjKHyVKysXkgI-elgrY1ZELlB7MQD38NDMsA2InCeOt52W6'); background-position: center; background-size: cover;"></div>
+<div class="relative z-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 w-full">
+<!-- Brisbane Core -->
+<div class="bg-surface-container-lowest p-8 border-l-2 border-primary shadow-sm group hover:bg-surface-container-highest transition-colors cursor-default">
+<div class="flex justify-between items-start mb-6">
+<h3 class="font-headline text-xl font-bold">Brisbane Core</h3>
+<span class="material-symbols-outlined text-primary" data-icon="location_city">location_city</span>
+</div>
+<ul class="space-y-3 text-sm text-secondary font-body">
+<li class="flex items-center gap-2"><span class="w-1 h-1 bg-primary rounded-full"></span> Inner City &amp; CBD</li>
+<li class="flex items-center gap-2"><span class="w-1 h-1 bg-primary rounded-full"></span> Northside Heritage Hubs</li>
+<li class="flex items-center gap-2"><span class="w-1 h-1 bg-primary rounded-full"></span> Southside Residential</li>
+</ul>
+</div>
+<!-- Moreton Bay -->
+<div class="bg-surface-container-lowest p-8 border-l-2 border-outline-variant shadow-sm group hover:border-primary transition-all cursor-default">
+<div class="flex justify-between items-start mb-6">
+<h3 class="font-headline text-xl font-bold">Moreton Bay</h3>
+<span class="material-symbols-outlined text-secondary" data-icon="water">water</span>
+</div>
+<ul class="space-y-3 text-sm text-secondary font-body">
+<li class="flex items-center gap-2"><span class="w-1 h-1 bg-outline-variant rounded-full"></span> Redcliffe Peninsula</li>
+<li class="flex items-center gap-2"><span class="w-1 h-1 bg-outline-variant rounded-full"></span> North Lakes District</li>
+<li class="flex items-center gap-2"><span class="w-1 h-1 bg-outline-variant rounded-full"></span> Pine Rivers Area</li>
+</ul>
+</div>
+<!-- Logan & Redlands -->
+<div class="bg-surface-container-lowest p-8 border-l-2 border-outline-variant shadow-sm group hover:border-primary transition-all cursor-default">
+<div class="flex justify-between items-start mb-6">
+<h3 class="font-headline text-xl font-bold">Logan &amp; Redlands</h3>
+<span class="material-symbols-outlined text-secondary" data-icon="precision_manufacturing">precision_manufacturing</span>
+</div>
+<ul class="space-y-3 text-sm text-secondary font-body">
+<li class="flex items-center gap-2"><span class="w-1 h-1 bg-outline-variant rounded-full"></span> Logan Central Industrial</li>
+<li class="flex items-center gap-2"><span class="w-1 h-1 bg-outline-variant rounded-full"></span> Cleveland Waterfront</li>
+<li class="flex items-center gap-2"><span class="w-1 h-1 bg-outline-variant rounded-full"></span> Capalaba Retail Corridor</li>
+</ul>
+</div>
+<!-- Operational Readiness Info -->
+<div class="bg-primary p-8 flex flex-col justify-between text-on-primary md:col-span-2 lg:col-span-3">
+<div>
+<span class="text-[0.65rem] font-label tracking-widest uppercase opacity-70 mb-2 block font-body">Professional Coverage</span>
+<h4 class="font-headline text-2xl font-bold leading-tight mb-4">A Commitment to Planned Excellence</h4>
+<p class="text-sm opacity-90 leading-relaxed max-w-3xl font-body">Our operational model is built on reliable scheduling and thorough site assessments. By prioritizing strategic planning over reactive measures, we ensure that every project is executed by a expert plumber with technical precision and long-term durability in mind.</p>
+</div>
+<div class="flex gap-4 mt-8">
+<div class="flex items-center gap-2 bg-white/10 px-3 py-1.5 rounded-sm">
+<div class="w-2 h-2 rounded-full bg-green-400"></div>
+<span class="text-[10px] font-label tracking-tighter uppercase font-body">Professional Standard Maintained</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Industrial Material Grid Section -->
+<section class="max-w-7xl mx-auto px-8 grid grid-cols-1 lg:grid-cols-12 gap-24 items-center">
+<div class="lg:col-span-5 order-2 lg:order-1">
+<div class="relative group">
+<img alt="Industrial pipes" class="w-full aspect-[4/5] object-cover grayscale brightness-90 contrast-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAkekyQg-zQkh4p32YvpzhMTVeDyxrF_LsCsFttBLZyLKPZkPDxLcFLpDSM2__orJD_oNGK-c6rwDW7LxAhpEugn7AH3g2XQHWbRzUpcqj7gURMV8v9Gl6kJ2Gxzgy4DQW_UzLM-C7Y7YOz02aq19-y5bV6LFj860CN9xWTZGISuimVYue5Z65pDgAR9uF3qDAx2cRVd988gBK864MAyDLvvVI-0FMyi3HLQr4BWdYjVuU9NNaDfTsmpe7FZkxbqFL_dfzr9aOPhUXG"/>
+<div class="absolute -bottom-8 -right-8 bg-surface-container p-12 hidden md:block">
+<span class="text-primary text-5xl font-headline font-extrabold">24h</span>
+<p class="text-xs font-label tracking-widest text-secondary mt-2 font-body">PROJECT OVERSIGHT</p>
+</div>
+</div>
+</div>
+<div class="lg:col-span-7 order-1 lg:order-2">
+<span class="text-xs font-label tracking-[0.2em] text-primary uppercase mb-6 block">Architectural Integrity</span>
+<h2 class="font-headline text-[2.5rem] font-bold leading-tight mb-8">Why Local Knowledge <br/>Defines Professional Outcome</h2>
+<div class="space-y-12">
+<div class="flex gap-6">
+<span class="text-outline-variant font-headline text-2xl font-bold opacity-30">01</span>
+<div>
+<h4 class="font-headline text-xl font-bold mb-3">Topographic Intelligence</h4>
+<p class="text-secondary leading-relaxed font-body">Understanding Brisbane's unique soil composition and drainage gradients allows our plumber teams to install systems that withstand shifting ground and tropical precipitation patterns.</p>
+</div>
+</div>
+<div class="flex gap-6">
+<span class="text-outline-variant font-headline text-2xl font-bold opacity-30">02</span>
+<div>
+<h4 class="font-headline text-xl font-bold mb-3">Regulatory Compliance</h4>
+<p class="text-secondary leading-relaxed font-body">Each council—from Logan City to Moreton Bay—maintains distinct hydraulic bylaws. We ensure every project is pre-compliant with local planning schemes.</p>
+</div>
+</div>
+<div class="flex gap-6">
+<span class="text-outline-variant font-headline text-2xl font-bold opacity-30">03</span>
+<div>
+<h4 class="font-headline text-xl font-bold mb-3">Fixture Specifications</h4>
+<p class="text-secondary leading-relaxed font-body">We recommend materials based on regional water hardness and salinity, ensuring longevity whether you're in the bayside or the inner-western suburbs.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Material Spec Chips -->
+<section class="mt-32 max-w-7xl mx-auto px-8 overflow-hidden">
+<div class="flex gap-4 overflow-x-auto pb-8 scrollbar-hide whitespace-nowrap">
+<div class="flex items-center gap-3 bg-surface-container-low px-4 py-2 rounded-sm shrink-0">
+<div class="w-3 h-3 rounded-full" style="background-color: #b87333;"></div>
+<span class="text-xs font-medium text-secondary font-body">Brushed Copper</span>
+</div>
+<div class="flex items-center gap-3 bg-surface-container-low px-4 py-2 rounded-sm shrink-0">
+<div class="w-3 h-3 rounded-full" style="background-color: #71706e;"></div>
+<span class="text-xs font-medium text-secondary font-body">Brushed Graphite</span>
+</div>
+<div class="flex items-center gap-3 bg-surface-container-low px-4 py-2 rounded-sm shrink-0">
+<div class="w-3 h-3 rounded-full" style="background-color: #e5e4e2;"></div>
+<span class="text-xs font-medium text-secondary font-body">Polished Chrome</span>
+</div>
+<div class="flex items-center gap-3 bg-surface-container-low px-4 py-2 rounded-sm shrink-0">
+<div class="w-3 h-3 rounded-full" style="background-color: #d4af37;"></div>
+<span class="text-xs font-medium text-secondary font-body">Satin Brass</span>
+</div>
+<div class="flex items-center gap-3 bg-surface-container-low px-4 py-2 rounded-sm shrink-0">
+<div class="w-3 h-3 rounded-full" style="background-color: #363636;"></div>
+<span class="text-xs font-medium text-secondary font-body">Matte Onyx</span>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer Shell -->
+<footer class="w-full border-t border-stone-200 dark:border-stone-800 bg-stone-100 dark:bg-stone-950">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 px-8 py-16 max-w-7xl mx-auto">
+<div class="md:col-span-1">
+<div class="text-lg font-bold text-stone-900 dark:text-stone-100 font-headline mb-4">
+                    Brisbane Plumbing Co.
+                </div>
+<p class="font-inter text-sm leading-relaxed text-stone-600 mb-4">
+                    Expert plumbing solutions across Brisbane Core, Moreton Bay, and Logan &amp; Redlands.
+                </p>
+</div>
+<div>
+<h4 class="font-manrope font-semibold text-stone-900 mb-6 uppercase text-xs tracking-widest">Resources</h4>
+<ul class="space-y-4">
+<li><a class="text-stone-500 hover:text-stone-800 dark:hover:text-stone-200 font-inter text-sm transition-colors duration-200" href="#">Privacy Policy</a></li>
+<li><a class="text-stone-500 hover:text-stone-800 dark:hover:text-stone-200 font-inter text-sm transition-colors duration-200" href="#">Terms of Service</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-manrope font-semibold text-stone-900 mb-6 uppercase text-xs tracking-widest">Company</h4>
+<ul class="space-y-4">
+<li><a class="text-stone-500 hover:text-stone-800 dark:hover:text-stone-200 font-inter text-sm transition-colors duration-200" href="#">Contact Us</a></li>
+<li><a class="text-stone-500 hover:text-stone-800 dark:hover:text-stone-200 font-inter text-sm transition-colors duration-200" href="#">Service Status</a></li>
+</ul>
+</div>
+<div class="md:col-span-1">
+<div class="font-inter text-sm leading-relaxed text-stone-600 opacity-80">
+                    © 2024 Brisbane Plumbing Co. QBCC License #1234567. All Rights Reserved.
+                </div>
+</div>
+</div>
+</footer>
+<!-- Service Area FAB -->
+<div class="fixed bottom-8 right-8 z-40 md:hidden">
+<button class="bg-primary text-on-primary h-14 w-14 rounded-full shadow-lg flex items-center justify-center transition-transform active:scale-95">
+<span class="material-symbols-outlined" data-icon="add_call">add_call</span>
+</button>
+</div>
+</body></html>

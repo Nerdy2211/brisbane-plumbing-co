@@ -1,0 +1,59 @@
+import Image from "next/image";
+import Link from "next/link";
+import { BUSINESS } from "@/data/constants";
+import { IMAGES } from "@/data/images";
+
+export default function Hero() {
+  return (
+    <header className="relative min-h-screen flex items-center pt-20 overflow-hidden">
+      <div className="max-w-7xl mx-auto px-8 w-full grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        <div className="lg:col-span-7 z-10">
+          <span className="text-xs tracking-[0.2em] text-primary font-bold mb-6 block uppercase font-label">
+            BRISBANE&apos;S LOCAL PLUMBER
+          </span>
+          <h1 className="text-[clamp(2.5rem,6vw,3.5rem)] font-headline font-extrabold leading-[1.1] text-on-surface mb-8 tracking-tight">
+            Quality Plumbing You Can Count On.
+          </h1>
+          <p className="text-lg md:text-xl text-secondary max-w-xl mb-10 leading-relaxed font-body">
+            From blocked drains to full renovations — licensed, insured, and
+            built on doing the job right the first time.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4">
+            <Link
+              href="#contact"
+              className="bronze-gradient text-white px-8 py-4 rounded-sm font-headline font-bold text-center tracking-wide transition-transform hover:scale-[1.02]"
+            >
+              Get a Quote
+            </Link>
+            <Link
+              href="/services"
+              className="text-primary font-headline font-bold text-center px-8 py-4 border-b-2 border-transparent hover:border-primary transition-all"
+            >
+              Our Services
+            </Link>
+          </div>
+        </div>
+        <div className="lg:col-span-5 relative h-[500px] lg:h-[700px]">
+          <Image
+            src={IMAGES.hero}
+            alt="Polished copper pipes and brass fittings"
+            fill
+            className="object-cover rounded-sm"
+            priority
+          />
+        </div>
+      </div>
+      <div className="absolute bottom-12 left-8 hidden lg:block">
+        <div className="flex items-center gap-4 text-secondary/40">
+          <span className="text-sm font-headline font-bold tracking-tighter">
+            {BUSINESS.established.toUpperCase()}
+          </span>
+          <div className="w-24 h-[1px] bg-outline-variant/30" />
+          <span className="text-sm font-headline font-bold tracking-tighter uppercase">
+            South East QLD
+          </span>
+        </div>
+      </div>
+    </header>
+  );
+}
