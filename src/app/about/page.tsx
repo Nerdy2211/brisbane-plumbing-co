@@ -43,8 +43,8 @@ export default function AboutPage() {
       <Header />
       <main id="main-content" className="pt-32">
         {/* Hero */}
-        <section className="max-w-7xl mx-auto px-6 lg:px-8 mb-16 lg:mb-32 grid grid-cols-12 gap-8 items-end">
-          <div className="col-span-12 lg:col-span-7">
+        <section className="max-w-7xl mx-auto px-6 lg:px-8 mb-16 lg:mb-32 grid grid-cols-1 lg:grid-cols-12 gap-8 items-end">
+          <div className="lg:col-span-7 relative z-10">
             <span className="text-primary font-label text-[0.75rem] uppercase tracking-[0.15em] font-semibold mb-6 block">
               ABOUT US
             </span>
@@ -61,7 +61,7 @@ export default function AboutPage() {
               and leaving your place clean when we&apos;re done.
             </p>
           </div>
-          <div className="col-span-12 lg:col-span-5 relative">
+          <div className="lg:col-span-5 relative">
             <div className="max-h-[250px] lg:max-h-none aspect-auto lg:aspect-[4/5] overflow-hidden relative">
               <Image
                 src={IMAGES.aboutHero}
@@ -103,14 +103,9 @@ export default function AboutPage() {
           <div className="max-w-7xl mx-auto px-8">
             <div className="grid grid-cols-2 gap-24 items-center">
               <div className="space-y-12">
-                <div className="relative">
-                  <span className="absolute -top-8 right-0 text-[12rem] font-headline font-extrabold text-on-surface/[0.06] leading-none select-none z-0 pointer-events-none">
-                    01
-                  </span>
-                  <h2 className="text-3xl font-bold tracking-tight font-headline relative z-10">
-                    Quality Over Shortcuts
-                  </h2>
-                </div>
+                <h2 className="text-3xl font-bold tracking-tight font-headline">
+                  Quality Over Shortcuts
+                </h2>
                 <p className="text-secondary leading-relaxed text-lg font-body">
                   We&apos;d rather take the time to fix something properly than
                   rush through and have you calling us back next month. Every

@@ -39,9 +39,7 @@ export default function FeaturedServices() {
                 className="object-cover brightness-[0.4]"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-on-surface/90 via-on-surface/70 to-on-surface/45" />
-              <span className="absolute top-4 right-4 text-[8rem] font-headline font-extrabold text-white/10 select-none leading-none pointer-events-none">
-                {num}
-              </span>
+
               <div className="relative z-10 px-6 py-12">
                 <span className="font-label text-primary font-bold tracking-[0.15em] uppercase text-xs mb-3 block">
                   {service.label}
@@ -67,9 +65,7 @@ export default function FeaturedServices() {
 
             {/* === DESKTOP: side-by-side with animations === */}
             <div className="hidden md:block max-w-7xl mx-auto px-8 relative">
-              <span className="absolute -top-8 right-0 text-[12rem] font-headline font-extrabold text-on-surface/[0.06] select-none leading-none z-0 pointer-events-none">
-                {num}
-              </span>
+
               <div className="grid grid-cols-2 gap-16 items-center relative z-10">
                 <FadeIn
                   direction={textDir as "left" | "right"}
