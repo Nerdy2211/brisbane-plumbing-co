@@ -82,9 +82,9 @@ export default function AboutPage() {
             src={IMAGES.aboutTools}
             alt="Professional plumbing tools and materials"
             fill
-            className="object-cover brightness-[0.4]"
+            className="object-cover brightness-[0.6]"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-on-surface/90 via-on-surface/70 to-on-surface/45" />
+          <div className="absolute inset-0 bg-gradient-to-t from-on-surface/85 via-on-surface/50 to-on-surface/25" />
           <div className="relative z-10 px-6 py-12">
             <h2 className="text-3xl font-bold tracking-tight font-headline text-white mb-6">
               Quality Over Shortcuts
