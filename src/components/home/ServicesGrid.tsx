@@ -35,8 +35,8 @@ export default function ServicesGrid() {
               Plumbing Services Across Brisbane
             </h2>
             <p className="text-lg text-secondary font-body leading-relaxed">
-              A comprehensive suite of plumbing services delivered with
-              technical precision and architectural consideration.
+              Everything from a dripping tap to a full house renovation.
+              Licensed, insured, and ready to help.
             </p>
           </div>
           <div className="hidden md:block">

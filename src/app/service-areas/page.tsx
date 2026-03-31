@@ -83,13 +83,16 @@ export default function ServiceAreasPage() {
         {/* Region Cards */}
         <section className="max-w-7xl mx-auto px-6 lg:px-8 mb-12 md:mb-24">
           <div className="relative bg-surface-container-low p-6 md:p-12 lg:p-24 overflow-hidden min-h-[500px] flex items-center justify-center">
-            <div className="absolute inset-0 opacity-10 pointer-events-none grayscale contrast-125">
-              <Image
-                src={IMAGES.serviceAreasMapBg}
-                alt=""
-                fill
-                className="object-cover"
-                aria-hidden="true"
+            <div className="absolute inset-0 pointer-events-none opacity-20 grayscale contrast-110 hover:grayscale-0 hover:opacity-30 transition-all duration-700">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d226364.67803943682!2d152.85!3d-27.47!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b91579aac93d233%3A0x402a35af3deaf40!2sBrisbane%20QLD!5e0!3m2!1sen!2sau!4v1700000000000!5m2!1sen!2sau"
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="Brisbane service area map"
               />
             </div>
             <div className="relative z-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 w-full">

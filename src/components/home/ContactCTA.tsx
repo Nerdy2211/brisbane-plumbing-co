@@ -95,6 +95,23 @@ export default function ContactCTA() {
               </div>
               <div className="space-y-2">
                 <label className="text-[10px] font-label font-bold uppercase tracking-widest opacity-60">
+                  Service Needed
+                </label>
+                <select className="w-full border-0 border-b border-outline-variant bg-transparent py-4 focus:ring-0 focus:border-primary transition-colors font-body text-sm">
+                  <option value="">Select a service...</option>
+                  <option>Blocked Drains</option>
+                  <option>Hot Water Systems</option>
+                  <option>Leak Detection</option>
+                  <option>Gas Fitting</option>
+                  <option>General Maintenance</option>
+                  <option>Kitchen &amp; Bathroom</option>
+                  <option>Stormwater &amp; Drainage</option>
+                  <option>Commercial Plumbing</option>
+                  <option>Other / Not Sure</option>
+                </select>
+              </div>
+              <div className="space-y-2">
+                <label className="text-[10px] font-label font-bold uppercase tracking-widest opacity-60">
                   Details
                 </label>
                 <textarea

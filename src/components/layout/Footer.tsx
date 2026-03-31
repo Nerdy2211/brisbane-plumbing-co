@@ -90,7 +90,7 @@ export default function Footer() {
 
       <div className="max-w-7xl mx-auto px-8 py-6 border-t border-outline-variant/20 flex flex-col md:flex-row justify-between items-center gap-4">
         <span className="font-body text-xs text-secondary/60">
-          &copy; 2026 {BUSINESS.name}. QBCC Licence {BUSINESS.qbccLicence}.
+          &copy; 2026 {BUSINESS.name} &mdash; QBCC Licence {BUSINESS.qbccLicence}.
           All Rights Reserved.
         </span>
       </div>

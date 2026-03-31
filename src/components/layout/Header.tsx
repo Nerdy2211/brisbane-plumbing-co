@@ -46,7 +46,7 @@ export default function Header() {
             {BUSINESS.phone}
           </Link>
           <Link
-            href="#contact"
+            href="/#contact"
             className="hidden md:block bronze-gradient text-on-primary px-6 py-2.5 rounded-sm font-headline font-bold tracking-tight text-sm hover:opacity-90 transition-all"
           >
             Get a Quote
@@ -90,7 +90,7 @@ export default function Header() {
             Call {BUSINESS.phone}
           </Link>
           <Link
-            href="#contact"
+            href="/#contact"
             onClick={() => setMobileOpen(false)}
             className="block bronze-gradient text-on-primary px-6 py-3 rounded-sm font-headline font-bold tracking-tight text-sm text-center mt-4"
           >

@@ -80,7 +80,7 @@ export default function AboutPage() {
             fill
             className="object-cover brightness-[0.4]"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-[#1b1c19]/95 via-[#1b1c19]/80 to-[#1b1c19]/60" />
+          <div className="absolute inset-0 bg-gradient-to-t from-[#1b1c19]/90 via-[#1b1c19]/70 to-[#1b1c19]/45" />
           <div className="relative z-10 px-6 py-12">
             <h2 className="text-3xl font-bold tracking-tight font-headline text-white mb-6">
               Quality Over Shortcuts

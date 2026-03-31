@@ -146,7 +146,7 @@ export default function ServicesPage() {
                     </ul>
                   </div>
                   <Link
-                    href="#contact"
+                    href="/#contact"
                     className="inline-flex items-center gap-3 text-primary font-headline font-bold uppercase tracking-widest text-sm hover:gap-5 transition-all group"
                   >
                     Get a Quote

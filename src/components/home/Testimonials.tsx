@@ -1,13 +1,5 @@
-import Image from "next/image";
 import { Star } from "lucide-react";
 import { testimonials } from "@/data/testimonials";
-import { IMAGES } from "@/data/images";
-
-const portraitImages: (string | null)[] = [
-  IMAGES.testimonialPortrait1,
-  IMAGES.testimonialPortrait2,
-  null,
-];
 
 export default function Testimonials() {
   return (
@@ -23,7 +15,7 @@ export default function Testimonials() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {testimonials.map((t, idx) => (
+          {testimonials.map((t) => (
             <div key={t.name} className="border-t border-outline-variant pt-8">
               <div className="flex gap-1 mb-4">
                 {Array.from({ length: t.rating }).map((_, i) => (
@@ -38,20 +30,10 @@ export default function Testimonials() {
                 &ldquo;{t.quote}&rdquo;
               </p>
               <div className="flex items-center gap-4">
-                <div className="w-12 h-12 bg-surface-container-high rounded-sm overflow-hidden flex items-center justify-center">
-                  {portraitImages[idx] ? (
-                    <Image
-                      src={portraitImages[idx]}
-                      alt={`Portrait of ${t.name}`}
-                      width={48}
-                      height={48}
-                      className="w-full h-full object-cover"
-                    />
-                  ) : (
-                    <span className="font-headline font-bold text-primary text-lg">
-                      {t.initial}
-                    </span>
-                  )}
+                <div className="w-12 h-12 bg-surface-container-high rounded-sm flex items-center justify-center">
+                  <span className="font-headline font-bold text-primary text-lg">
+                    {t.initial}
+                  </span>
                 </div>
                 <div>
                   <span className="block font-headline font-bold text-sm">
