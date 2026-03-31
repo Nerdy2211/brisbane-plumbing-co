@@ -36,9 +36,9 @@ export default function FeaturedServices() {
                 src={featuredImages[idx].src}
                 alt={featuredImages[idx].alt}
                 fill
-                className="object-cover brightness-[0.6]"
+                className="object-cover brightness-[0.7]"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-on-surface/85 via-on-surface/50 to-on-surface/25" />
+              <div className="absolute inset-0 bg-gradient-to-t from-on-surface/80 via-on-surface/40 to-on-surface/15" />
 
               <div className="relative z-10 px-6 py-12">
                 <span className="font-label text-primary font-bold tracking-[0.15em] uppercase text-xs mb-3 block">

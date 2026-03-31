@@ -14,11 +14,11 @@ export default function Hero() {
           src={IMAGES.hero}
           alt=""
           fill
-          className="object-cover brightness-[0.6]"
+          className="object-cover brightness-[0.7]"
           priority
           aria-hidden="true"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-on-surface/85 via-on-surface/50 to-on-surface/25" />
+        <div className="absolute inset-0 bg-gradient-to-t from-on-surface/80 via-on-surface/40 to-on-surface/15" />
       </div>
 
       <div className="max-w-7xl mx-auto px-6 lg:px-8 w-full grid grid-cols-1 lg:grid-cols-12 gap-12 items-center relative z-10">
